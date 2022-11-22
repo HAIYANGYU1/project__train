@@ -1,0 +1,29 @@
+
+
+p = []
+
+for ele in range(10):
+    # print(ele)
+    if ele % 2 == 0:
+        p.append(ele)
+
+print(p)
+
+
+def fn(x):
+    return x*3
+
+
+
+def modify(p_old, func):
+    p_new = []
+    for ele2 in p_old:     
+        r = func(ele2)
+        if r > 10 and r < 20:
+            p_new.append(ele2)
+    return p_new
+
+new_list = modify(p,fn)
+
+print(new_list)
+
