@@ -1,4 +1,5 @@
-
+import numpy as np
+import matplotlib.pyplot as plt
 import pandas as pd
 
 data = pd.read_csv('radar.csv',sep=';')
@@ -13,4 +14,6 @@ for n in d:
     else:
         count = 1
     print(f'"num:"{num},"count:"{count}')
-        
+
+plt.plot(data.index,data.d)
+plt.show()
